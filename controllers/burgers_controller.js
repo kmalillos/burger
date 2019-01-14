@@ -14,16 +14,14 @@ router.get("/", function (req, res) {
   });
 });
 
-// router.post("/api/burger", function (req, res) {
-//   burger.insertOne([
-//     "name", "sleepy"
-//   ], [
-//       req.body.name, req.body.sleepy
-//     ], function (result) {
-//       // Send back the ID of the new quote
-//       res.json({ id: result.insertId });
-//     });
-// });
+    // function (table, cols, vals, callback)
+    // INSERT INTO table (columns) VALUES (?);
+router.post("/api/burger", function (req, res) {
+  burger.insertOne("burger_name", req.body.burger_name, function (result) {
+      // Send back the ID of the new quote
+      res.json({ id: result.insertId });
+    });
+});
 
 // PUT request updates data.
 // This is where the burger goes from "not devoured" to "devoured"

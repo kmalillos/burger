@@ -6,40 +6,57 @@
   </div>
 </div>
 
-{{!-- Two Row Container --}}
-<div class="container">
-
-  <div class="row">
+{{!-- BURGERS LIST --}}
+<div class="container px-lg-5 ">
+  <div class="row mx-lg-n5">
 
     {{!-- 1/2 Column --}}
-    <div class="col-sm">
-
-      <h3>Available Burgers</h3>
-
-      <ul>
-        {{#each burger}}
-          {{#unless devoured}}
-            {{> burgers/burger-block}}
-          {{/unless}}
-        {{/each}}
-      </ul>
-
+    <div class="col py-3 px-lg-5">
+      <h3 class="text-center">Available Burgers</h3>
+        <ul>
+          {{#each burger}}
+            {{#unless devoured}}
+              {{> burgers/burger-block}}
+            {{/unless}}
+          {{/each}}
+        </ul>
     </div>
 
     {{!-- 2/2 Column --}}
-    <div class="col-sm">
-
-      <h3>Devoured Burgers</h3>
-
-      <ul>
-        {{#each burger}}
-          {{#if devoured}}
-            {{> burgers/burger-block}}
-          {{/if}}
-        {{/each}}
-      </ul>
-
+    <div class="col py-3 px-lg-5">
+      <h3 class="text-center">Devoured Burgers</h3>
+        <ul>
+          {{#each burger}}
+            {{#if devoured}}
+              {{> burgers/burger-block}}
+            {{/if}}
+          {{/each}}
+        </ul>
     </div>
 
   </div>
 </div>
+
+<br>
+
+{{!-- ADD A BURGER--}}
+<div class="row align-items-center">
+    <div class="col"></div>
+
+    <div class="col text-center">
+
+      <form class="add-burger">
+        <div class="form-group">
+          <h3><label for="new-burger">Add a Burger!</label></h3>
+          <textarea class="form-control" id="new-burger" rows="1"></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+
+    </div>
+
+    <div class="col"></div>
+  </div>
+
+
