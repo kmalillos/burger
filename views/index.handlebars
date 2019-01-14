@@ -1,62 +1,53 @@
-<div class="card text-center">
+<div class="card bg-light text-center">
   <div class="card-body">
-    <img src="/assets/img/burger_sm.png" alt="burger image">
-    <h1 class="card-title">Eat a Burger!</h5>
-      {{!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> --}}
+    <h1 class="card-title">EAT A BURGER</h5>
   </div>
 </div>
 
-{{!-- BURGERS LIST --}}
-<div class="container px-lg-5 ">
-  <div class="row mx-lg-n5">
+<br><br><br><br>
 
-    {{!-- 1/2 Column --}}
-    <div class="col py-3 px-lg-5">
-      <h3 class="text-center">Available Burgers</h3>
-        <ul>
-          {{#each burger}}
-            {{#unless devoured}}
-              {{> burgers/burger-block}}
-            {{/unless}}
-          {{/each}}
-        </ul>
-    </div>
+{{!-- BOOTSTRAP --}}
+<div class="row-eq-height">
 
-    {{!-- 2/2 Column --}}
-    <div class="col py-3 px-lg-5">
-      <h3 class="text-center">Devoured Burgers</h3>
-        <ul>
-          {{#each burger}}
-            {{#if devoured}}
-              {{> burgers/burger-block}}
-            {{/if}}
-          {{/each}}
-        </ul>
-    </div>
+  {{!-- ADD A BURGER --}}
+  <div class="col py-3 px-lg-5 bg-light">
+    <form class="add-burger">
+      <div class="form-group text-center">
+        <h4><label for="new-burger">Create a Burger</label></h4>
+        <img class="center" src="/assets/img/burger_sm.png" alt="burger image">
+        <textarea class="form-control" id="new-burger" rows="1"></textarea>
+      </div>
 
+      <button class="center" type="submit">Add Burger!</button>
+    </form>
   </div>
+
+  {{!-- AVAILABLE BURGERS --}}
+  <div class="col py-3 px-lg-5 bg-light">
+    <h4 class="text-center">Burgers Ready to Eat</h4>
+    <img class="center" src="/assets/img/burger_sm.png" alt="burger image">
+    <ul>
+      {{#each burger}}
+      {{#unless devoured}}
+      {{> burgers/burger-block}}
+      {{/unless}}
+      {{/each}}
+    </ul>
+  </div>
+
+  {{!-- DEVOURED BURGERS --}}
+  <div class="col py-3 px-lg-5 bg-light">
+    <h4 class="text-center">Devoured Burgers</h4>
+    <img class="center" src="/assets/img/burger_sm.png" alt="burger image">
+    <ul>
+      {{#each burger}}
+      {{#if devoured}}
+      {{> burgers/burger-block}}
+      {{/if}}
+      {{/each}}
+    </ul>
+  </div>
+
 </div>
 
-<br>
-
-{{!-- ADD A BURGER--}}
-<div class="row align-items-center">
-    <div class="col"></div>
-
-    <div class="col text-center">
-
-      <form class="add-burger">
-        <div class="form-group">
-          <h3><label for="new-burger">Add a Burger!</label></h3>
-          <textarea class="form-control" id="new-burger" rows="1"></textarea>
-        </div>
-
-        <button type="submit">Submit</button>
-      </form>
-
-    </div>
-
-    <div class="col"></div>
-  </div>
-
-
+<br><br><br><br>

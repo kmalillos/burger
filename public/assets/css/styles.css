@@ -1,0 +1,43 @@
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+  }
+
+body {
+    background: url("/assets/img/diner-background.jpg") no-repeat fixed center;
+}
+
+h1 {
+    font-weight: 850;
+    padding: 10px;
+}
+
+h4 {
+    font-weight: 625;
+}
+
+.bg-light {
+    opacity: 0.9;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+}
