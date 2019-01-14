@@ -8,7 +8,7 @@ $(function () {
             devoured: 0
         };
 
-        $.ajax("/api/burgers/" + id, {
+        $.ajax("/api/burger/" + id, {
             type: "PUT",
             data: changeBurger
         }).then(
