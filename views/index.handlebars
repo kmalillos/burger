@@ -1,7 +1,7 @@
 <div class="card text-center">
   <div class="card-body">
+    <img src="/assets/img/burger_sm.png" alt="burger image">
     <h1 class="card-title">Eat a Burger!</h5>
-      <img src="../public/assets/img/burger_sm.png" alt="burger image">
       {{!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> --}}
   </div>
 </div>
@@ -19,7 +19,7 @@
       <ul>
         {{#each burger}}
           {{#unless devoured}}
-            {{> burgers/burger-block devoured=false}}
+            {{> burgers/burger-block}}
           {{/unless}}
         {{/each}}
       </ul>
@@ -34,7 +34,7 @@
       <ul>
         {{#each burger}}
           {{#if devoured}}
-            {{> burgers/burger-block devoured=true}}
+            {{> burgers/burger-block}}
           {{/if}}
         {{/each}}
       </ul>
