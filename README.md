@@ -1,14 +1,14 @@
-#Eat A Burger
+# Eat A Burger
+
+![Image](https://github.com/kmalillos/burger/blob/master/public/assets/img/readme/Live-Page.JPG)
 
 ### Live Page: [Link](https://kmalillos-burger.herokuapp.com/)
 
-![Image](https://github.com/kmalillos/unit-4-game/blob/master/assets/images/read-me/readme-pic.JPG)
-
 ## How It Works
 
-* 1. Create a burger, any burger!
-* 2. Once the burger is ready to eat, 'devour' the burger!
-* 3. App will list all devoured burgers. 
+* Create a burger, any burger!
+* Once the burger is ready to eat, 'devour' the burger!
+* App will list all devoured burgers, like a long list of accomplishtments.
 
 **Sample Demo:** [Link](https://youtu.be/msvdn95x9OM)
 
@@ -20,13 +20,21 @@
 * Handlebars.js
 * jQuery
 
-### Express.js
+<!-- ### Express.js: 
+
+* explain code here
 
 ### MySQL
 
-### Handlebars.js
+* explain code here
 
-### jQuery
+### Handlebars.
+
+* explain code here
+
+### jQuery 
+
+* explain code here-->
 
 ## Contributor
 
