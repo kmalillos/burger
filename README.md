@@ -4,7 +4,7 @@ Imagine creating the most delicious burger you can think of instantaneously, and
 
 ### Try It Out: [Live Page Here](https://kmalillos-burger.herokuapp.com/)
 
-![Image](https://github.com/kmalillos/burger/blob/master/public/assets/img/readme/Live-Page.JPG)
+![Image](https://github.com/kmalillos/burger/blob/master/read-me/Live-Page.JPG)
 
 
 ## How It Works
