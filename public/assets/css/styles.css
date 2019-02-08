@@ -51,7 +51,7 @@ button {
     /* display: block; */
     position: fixed;
     left: 0;
-    bottom: 0;
+    bottom: -10;
     height: auto;
     width: 100%;
 }
